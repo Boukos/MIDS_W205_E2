@@ -16,7 +16,7 @@ if len(sys.argv) == 2:
     cur.execute("SELECT word, count FROM tweetwordcount WHERE word=%s", (word,))
     records = cur.fetchall()
     for rec in records:
-       print "Total number of occurrences of {0:s}: {0:d}".format(rec[0], rec[1])
+       print "Total number of occurrences of '{0:s}': {1:d}".format(rec[0], rec[1])
     conn.commit()
 
     conn.close()
@@ -31,7 +31,7 @@ else:
     cur.execute("SELECT word, count FROM tweetwordcount ORDER BY word ASC")
     records = cur.fetchall()
     for rec in records:
-       print rec[0],"/t","/t","/t", rec[1]
+       print rec[0], rec[1]
     conn.commit()
 
     conn.close()
