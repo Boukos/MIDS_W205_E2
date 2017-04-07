@@ -31,6 +31,7 @@ cur = conn.cursor()
 cur.execute('''CREATE TABLE tweetwordcount
        (word TEXT PRIMARY KEY     NOT NULL,
        count INT     NOT NULL);''')
+print "tweetwordcount table created"
 conn.commit()
 
 conn.close()
