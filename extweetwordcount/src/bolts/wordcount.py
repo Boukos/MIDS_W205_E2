@@ -33,8 +33,7 @@ class WordCounter(Bolt):
         # If the update updates exactly 0 rows (ie. it failed to find the current word in
         # the table) then insert the word and set its count to 1
         if cur.rowcount == 0:
-            cur.execute("INSERT INTO tweetwordcount (word,count) \
-                  VALUES (word=%s, 1)", (cWord,))
+            cur.execute("INSERT INTO tweetwordcount (word,count) VALUES (%s, 1)", (cWord,))
         conn.commit()
 
         conn.close()
