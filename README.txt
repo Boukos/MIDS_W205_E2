@@ -1,5 +1,8 @@
 # MIDS_W205_E2
 MIDS W205 Exercise 2
+Matthew Nelson
+
+This twitter application is designed to intake streaming data from twitter (live tweets), parse and count the individual words from these tweets and store the resulting tally’s in a postgres relational database. This database is then queried to serve up high level information regarding the words and their counts through two python scripts (designed to be interacted with at the command line). One script shows the counts for all words, or any specific word if passed as an argument. The other script shows all words and their counts where their counts are between two integers passed as an argument. 
 
 To run the application:
 1.	Launch a “UCB MIDS W205 EX2-FULL” Amazon AWS instance. 
