@@ -1,3 +1,6 @@
+;; Storm topology linking tweets spout, parse bolt and wordcount bolt
+;; and utilizing streamparse
+
 (ns tweetwordcount
   (:use     [streamparse.specs])
   (:gen-class))

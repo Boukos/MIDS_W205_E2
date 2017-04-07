@@ -1,3 +1,6 @@
+# Spout (using tweepy) to collect individual tweets and send to parse bolt.
+# Valid Twitter App credentials must be inserted into this file. 
+
 from __future__ import absolute_import, print_function, unicode_literals
 
 import itertools, time

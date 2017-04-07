@@ -1,3 +1,8 @@
+# Serving Python script to query the tweetwordcount table in postgres.
+# Provides the word and word count of all words with a count within the bounds
+# of two integers passed as arguments at the command line in the form [int1,int2].
+# Sorted by highest to lowest count.
+
 import sys
 
 import psycopg2

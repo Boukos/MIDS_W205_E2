@@ -1,3 +1,5 @@
+# Tweet parsing bolt to split incoming tweets into individual words.
+
 from __future__ import absolute_import, print_function, unicode_literals
 
 import re

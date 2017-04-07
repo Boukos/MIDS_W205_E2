@@ -1,9 +1,14 @@
+# Serving Python script to query the tweetwordcount table in postgres.
+# Provides the count of a single word if that word is provided as an argument
+# at the command line, otherwise it will print out all words in alphebetical
+# order with each words corresponding count at the time of query.
+
 import sys
 
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-# If arguement is passed at the command line, query that word & count
+# If argument is passed at the command line, query that word & count
 if len(sys.argv) == 2:
 
     word = sys.argv[1]

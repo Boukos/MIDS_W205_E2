@@ -1,3 +1,5 @@
+# Wordcount bolt to count individual words from parse bolt.
+
 from __future__ import absolute_import, print_function, unicode_literals
 
 from collections import Counter
